@@ -1,9 +1,23 @@
 import express, {Request, Response} from 'express';
+import dotenv from 'dotenv';
+import path from 'path';
+import mustache from 'mustache-express';
+import router from './routes/index';
 
+dotenv.config();
 const server = express();
 
-server.get('/', (req: Request, res: Response)=> {
-    res.send('funcionou!!!')
+
+server.set('view engine', 'mustache');
+server.set('views', path.join(__dirname, 'views'));
+server.engine('mustache', mustache());
+
+server.use(express.static(path.join(__dirname, '../public')));
+
+server.use(router);
+
+server.use((req, res)=> {
+    res.render('pages/404')
 });
 
-server.listen(3027)
+server.listen(process.env.PORT);

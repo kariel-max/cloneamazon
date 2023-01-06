@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+/* header */
+header a {
+    text-decoration: none;
+    color: white;
+    height: 100%;
+}
+.headerUp {
+    display: flex;
+    background-color: #131921;
+    height: 60px;
+    padding: 5px 10px;
+}
+
+.section-header-left {
+    display: flex;
+    height: inherit;
+}
+
+.logo-amazon {
+    display: flex;
+    align-items: center;
+}
+.logo-amazon span{
+    font-size: 1.8em;
+}
+.localizacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.localizacao .nome {
+    font-size: 0.8em;
+    color: #96becc;
+}
+.localizacao .cidade {
+    font-weight: 600;
+}
+
+.section-header-centro {
+    display: flex;
+    align-items: center;
+}
+.pesquisa {
+    display: flex;
+    margin: 0px 10px;
+}
+.pesquisa-todos {
+    font-size: 0.7em;
+    text-transform: uppercase;
+    background-color: #dadada;
+    padding: 5px;
+    border-radius: 8px 0px 0px 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pesquisa-todos select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.pesquisa input {
+    outline: none;
+    height: 40px;
+    width: 400px;
+}
+.button-pesquiza {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3a847;
+    border: none;
+    font-size: 20px;
+    width: 40px;
+    border-radius: 0px 8px 8px 0px;
+}
+.button-pesquiza:hover {
+    opacity: 0.7;
+}
+.contas-e-listas select {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #727272;
+}
+
+.horver_div {
+    height: inherit;
+    padding: 0px 10px;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+}
+.horver_div:hover {
+    transition: all ease 0.2s;
+    border: 1px solid white;
+}
+
+/* headerdowm */
+.headerdowm {
+    height: 25px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #232f3e;
+    padding: 4px;
+}
+.headerdowm-left {
+    height: inherit;
+    display: flex;
+}
+.todos {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+.area-barra {
+    height: 14px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 4px;
+}
+.barra {
+    height: 2px;
+    width: 17px;
+    background-color: #FFF;
+}
+
+/* imagens-movimentada */
+.imagens-movimentada {
+    background-color: #131921;
+    overflow-x: hidden;
+
+}
+.banner {
+    width: calc(3 * 100vw);
+    height: 100vh;
+    font-size: 5em;
+    display: flex;
+    transition: all ease 0.5s;
+}
+.banner1 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #131921;
+}
+.banner2 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+.banner3 {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+}
+
+/* conteudo */
+.conte {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin: -300px 0px 20px 0px;
+}
+.conteudo {
+    background-color: rgba(36, 34, 34, 0.425);
+    width: 300px;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+.img-area img {
+    width: 400px;
+    height: 400px;
+}
+.conteine {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+/* animação */
+[data-mover] {
+    opacity: 0;
+    transition: .3s;
+}
+[data-mover="left"] {
+    transform: translate3d(-50px, 0, 0);
+}
+[data-mover="rigth"] {
+    transform: translate3d(50px, 0, 0);
+}
+[data-mover].animate {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+}
