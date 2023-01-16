@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>clone Amazon filmes</title>
+    <title>clone Amazon</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     <header>
         <div class="headerUp">
-                <a href=""><div class="logo-amazon horver_div">
+                <a href="/"><div class="logo-amazon horver_div">
                     <div><span>amazon</span>.com.br</div>
                 </div></a>
                 <a href=""><div class="localizacao horver_div">
@@ -29,11 +29,13 @@
                             <option value=""></option>
                         </select>
                     </div>
-                    <form method="get" action="/seach/"><input type="text"></form>
-                    <div class="button-pesquiza">🔎</div>
-                </div>
+                        <form method="GET" action="/search">
+                        <input type="search" name="produtos" placeholder="Pesquisar por produtos" value="{{query}}"/>
+                         <button type="submit" class="button-pesquiza" >🔎</button>
+                        </form>
+                    </div>  
             </div>
-            <a href=""><div class="contas-e-listas horver_div"><p>contas e listas</p>
+            <a href="/contas"><div class="contas-e-listas horver_div"><p>contas e listas</p>
             <select name="" id="">
                 <option value=""></option>
                 <option value=""></option>
@@ -41,8 +43,8 @@
                 <option value=""></option>
             </select>
             </div></a>
-            <a href=""><div class="devoluçoes horver_div">pedidos e devoluções</div></a>
-            <a href=""><div class="carrinho horver_div">carrinho</div></a>
+            <a href="/pedidos"><div class="devoluçoes horver_div">pedidos e devoluções</div></a>
+            <a href="/carrinho"><div class="carrinho horver_div">carrinho</div></a>
         </div>
         <div class="headerdowm">
            <div class="headerdowm-left">
@@ -62,7 +64,7 @@
            </div>
 
            <div class="headerdowm-right">
-               <a href=""> <div class="propaganda-do-header horver_div">Amazon Prime: teste GRÁTIS por 30 dias
+               <a href="/cupons"> <div class="propaganda-do-header horver_div">Amazon Prime: teste GRÁTIS por 30 dias
                 </div></a>
            </div>
         </div>

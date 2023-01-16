@@ -68,6 +68,10 @@ header a {
     border: none;
     outline: none;
 }
+form {
+    display: flex;
+    flex-direction: row;
+}
 .pesquisa input {
     outline: none;
     height: 40px;
@@ -157,7 +161,7 @@ header a {
     align-items: center;
     background-color: #131921;
 }
-.banner2 {
+/* .banner2 {
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -172,7 +176,7 @@ header a {
     justify-content: center;
     align-items: center;
     background-color: yellow;
-}
+} */
 
 /* conteudo */
 .conte {
@@ -198,6 +202,19 @@ header a {
     justify-content: space-around;
     margin-top: -20px;
     margin-bottom: 20px;
+}
+.conteine .conteudo {
+   padding: 5px;
+}
+.name {
+    text-align: center;
+    font-size: 1.4em;
+}
+.image {
+    width: inherit;
+}
+.image img {
+    width: inherit;
 }
 
 /* animação */

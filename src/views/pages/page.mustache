@@ -1,28 +1,45 @@
 {{>partials/header}}
 </header>
+     {{#banner}}
     <section class="imagens-movimentada">
         <div class="banner">
-            <div class="banner1 img-area"><img src="../public/imagens/Foto-Fone-de-Ouvido-PNG.png"></div>
-            <div class="banner1 img-area"><img src="/public/imagens/telvisão.png"></div>
-            <div class="banner1 img-area">C</div>
+
+       <div class="banner1 img-area"><img src="imagens/{{background1}}"></div>
+       
+            <div class="banner1 img-area"><img src="imagens/{{background2}}"></div>
+       
+            <div class="banner1 img-area"><img src="imagens/{{background2}}"></div>
+        
         </div>
     </section>
+     {{/banner}}
     
-    <div class="conte">
-        <section class="conteudo">
-            <div id="imagens"><img src=""></div>
-            <h3 id="title"></h3>
-            <p id="plot"></p>
-            <span id="genero"></span>
-        </section>
-        <section class="conteudo"></section>
-        <section class="conteudo"></section>
-        <section class="conteudo"></section>
-    </div>
+    <div class="conte"></div>
+    {{! faça com que os produtos apareção de quatro em quatro vindo da esqueda e da direita
+    para isso já existem elementos para isso: data-mover="left" e data-mover="right" }}
+    
     <div class="conteine" data-mover="left">
-        <section class="conteudo"></section>
-        <section class="conteudo"></section>
-        <section class="conteudo"></section>
-        <section class="conteudo"></section>
+    
+        <section class="conteudo">
+        <div class="name">{{name}}</div>
+        <div class="image"><img src="imagens/{{ image }}"></div>      
+        <div class="desc"> {{descricao}} </div>
+        <div class="color"> {{color}} </div>
+        <div class="preco">Preço {{preco}} </div>
+        </section>
+    {{/list}}
     </div>
+    <div class="conteine" data-mover="rigth">
+    {{#list}}
+        <section class="conteudo">
+        <div class="name">{{name}}</div>
+        <div class="image"><img src="imagens/{{ image }}"></div>      
+        <div class="desc"> {{descricao}} </div>
+        <div class="color"> {{color}} </div>
+        <div class="preco"> Preço: {{preco}} </div>
+        </section>
+        
+    {{/list}}
+    </div>
+
     {{>partials/footer}}

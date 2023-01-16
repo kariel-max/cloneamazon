@@ -10,13 +10,23 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start-dev": "nodemon -e ts,json,mustache src/server.ts"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kariel-max/cloneamazon.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kariel-max/cloneamazon/issues"
+  },
+  "homepage": "https://github.com/kariel-max/cloneamazon#readme",
   "devDependencies": {
+    "@types/validator": "^13.7.10",
     "@types/express": "^4.17.15",
-    "@types/mustache-express": "^1.2.2",
     "@types/mongoose": "^5.11.97",
-    "@types/node": "^18.11.18"
+    "@types/mustache-express": "^1.2.2",
+    "@types/node": "^18.11.18",
+    "@types/sequelize": "^4.28.14"
   },
   "dependencies": {
     "copyfiles": "^2.4.1",
@@ -24,6 +34,9 @@
     "express": "^4.18.2",
     "mongoose": "^6.8.2",
     "mustache-express": "^1.3.2",
-    "typescript": "^4.9.4"
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.28.0",
+    "typescript": "^4.9.4",
+    "validator": "^13.7.0"
   }
 }

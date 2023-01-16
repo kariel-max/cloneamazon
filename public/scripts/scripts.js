@@ -58,7 +58,6 @@ function animeScroll() {
         } else {
             element.classList.remove(animationClass)
         }
-        console.log('funcionou!!!')
     })
 
 }
